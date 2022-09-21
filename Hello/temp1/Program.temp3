@@ -1,0 +1,137 @@
+// See https://aka.ms/new-console-template for more information
+
+// ----------------------------------------------------------------
+// ARRAY / LIST ---------------------------------------------------
+// ----------------------------------------------------------------
+/*
+int[] numeros = new int[] { 1, 2, 3, 4, 5 };
+int num = numeros[0];
+Console.WriteLine(num);
+
+int total = numeros.Length;
+Console.WriteLine(total);
+
+List<int> listNumeros = new List<int>();
+List<int> listaNums = new List<int>() { 1, 2, 3, 4, 5 };
+
+int count = listaNums.Count;
+listaNums.Add(6);
+listaNums.Remove(3);
+
+foreach (int numero in listaNums)
+    Console.WriteLine(numero);
+
+int numer = listaNums.ElementAt(0);
+Console.WriteLine(numer);
+
+//listaNums.Clear();
+//Console.WriteLine(listaNums.Count);
+*/
+
+// List<int> numeros = new List<int>() { 1, 0, 9, 6, 3, 5, 2, 8, 7, 4};
+// numeros.Sort();
+// foreach (int i in numeros)
+//     Console.WriteLine(i);
+
+// ----------------------------------------------------------------
+// DICTIONARY -----------------------------------------------------
+// ----------------------------------------------------------------
+
+/*
+Dictionary<int, string> estados = new Dictionary<int, string>();
+estados.Add(1, "RJ");
+estados.Add(2, "SP");
+estados.Add(3, "SC");
+
+if(!estados.ContainsKey(4))
+{
+    estados.Add(4, "MG");
+}
+
+// foreach (string estado in estados.Values)
+// {
+//     Console.WriteLine(estado);
+// }
+
+// string est = estados[3];
+
+string est = null;
+
+if (estados.TryGetValue(3, out est))
+{
+    Console.WriteLine(est);
+}
+*/
+
+// ----------------------------------------------------------------
+// QUEUE ----------------------------------------------------------
+// ----------------------------------------------------------------
+
+/*
+Queue<string> lista = new Queue<string>();
+lista.Enqueue("Olá");
+lista.Enqueue("pessoal");
+lista.Enqueue("do Linkedin");
+
+foreach(string palavra in lista)
+    Console.WriteLine(palavra);
+
+Console.WriteLine("------");
+int total = lista.Count;
+Console.WriteLine($"Temos {total} linhas");
+
+string elem = lista.Dequeue();
+
+Console.WriteLine($"Removendo {elem}");
+Console.WriteLine("...");
+
+total = lista.Count;
+Console.WriteLine($"Temos {total} linhas");
+foreach(string palavra in lista)
+    Console.WriteLine(palavra);
+
+Console.WriteLine("------");
+Console.WriteLine(lista.Peek());
+*/
+
+// ----------------------------------------------------------------
+// STACK ----------------------------------------------------------
+// ----------------------------------------------------------------
+/* 
+Stack<string> lista = new Stack<string>();
+lista.Push("Olá");
+lista.Push("pessoal");
+lista.Push("do Linkedin");
+
+foreach(string palavra in lista)
+    Console.WriteLine(palavra);
+
+Console.WriteLine("--------");
+Console.WriteLine(lista.Pop());
+
+Console.WriteLine("--------");
+foreach(string palavra in lista)
+    Console.WriteLine(palavra);
+
+Console.WriteLine("--------");
+Console.WriteLine(lista.Peek());
+
+int total = lista.Count;
+
+Console.WriteLine("--------");
+Console.WriteLine(total);
+*/
+
+// ----------------------------------------------------------------
+// SORTEDLIST -----------------------------------------------------
+// ----------------------------------------------------------------
+/* 
+SortedList<int, string> lista = new SortedList<int, string>();
+lista.Add(4, "RJ");
+lista.Add(2, "SP");
+lista.Add(1, "SC");
+lista.Add(3, "MG");
+
+foreach(string estado in lista.Values)
+    Console.WriteLine(estado);
+*/

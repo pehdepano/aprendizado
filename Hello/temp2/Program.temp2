@@ -1,0 +1,15 @@
+// See https://aka.ms/new-console-template for more information
+
+using Hello;
+/* 
+var aluno = new Aluno();
+aluno.Nome = "Thaise";
+aluno.CalcularMedia(5m, 6m, 7m);
+
+aluno.Logar();
+*/
+
+Aluno aluno = new Aluno();
+Usuario alunoUsuario = new Aluno();
+
+alunoUsuario.

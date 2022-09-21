@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hello
+{
+    public class Professor : Usuario
+    {
+        public Materia MateriaLecionada;
+
+        public Professor() :base()
+        { }
+
+        public Professor(string nome) :base(nome)
+        { }
+    }
+}

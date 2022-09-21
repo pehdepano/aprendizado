@@ -1,0 +1,108 @@
+﻿// See https://aka.ms/new-console-template for more information
+// Teste de Hello, World!
+Console.WriteLine("Hello, World!"); // Retorna 'Hello, World!'
+
+//----------------------------------------------------------------------------
+// Tipos de variáveis --------------------------------------------------------
+//----------------------------------------------------------------------------
+//int
+int i = 10;
+
+//float
+float f = 10.3f;
+
+//double
+double d = 1.7d;
+
+//decimal
+decimal e = 1.2m;
+
+//bool
+bool b1 = true;
+bool b2 = false;
+
+//char
+char c = 'A';
+
+//string
+string s = "Hello";
+
+var result = c + s;
+var teste1 = d + f;
+
+Console.WriteLine(result); // Retorna 'AHello'
+Console.WriteLine(teste1); // Retorna '12,000000190734863'
+//----------------------------------------------------------------------------
+// Operadores ----------------------------------------------------------------
+//----------------------------------------------------------------------------
+// Aritméticos
+int adicao = 2 + 3;
+int subtracao = 31 - 4;
+int multiplicacao = 10 * 3;
+int divisao = 15 / 3;
+
+int expr = (1 + 2) * 5 - 2 / 2;
+
+// Relacionais
+string cidade1 = "Blumenau";
+string cidade2 = "Teresopolis";
+
+bool ret1 = cidade1 == cidade2; // Retorna false
+bool ret2 = cidade1 != cidade2; // Retorna true
+
+int i2 = 2;
+int j = 5;
+
+bool ret3 = i2 == j;
+bool ret4 = i2 != j;
+bool ret5 = i2 > j;
+bool ret6 = i2 >= j;
+bool ret7 = i2 < j;
+bool ret8 = i2 <= j;
+
+// Lógicos
+bool ret9 = i2 < j && cidade1 == cidade2; // Retorna False, pois as duas condições precisam retornar True
+bool ret10 = i2 < j || cidade1 == cidade2; // Retorna True, pois apenas uma precisa ser True
+bool ret11 = !(i2 < j); // Retorna False, pois nega a expressão
+
+Console.WriteLine(ret1); // Retorna False
+Console.WriteLine(ret2); // Retorna True
+Console.WriteLine(ret3); // Retorna False
+Console.WriteLine(ret4); // Retorna True
+Console.WriteLine(ret5); // Retorna False
+Console.WriteLine(ret6); // Retorna False
+Console.WriteLine(ret7); // Retorna True
+Console.WriteLine(ret8); // Retorna True
+Console.WriteLine(ret9); // Retorna False
+Console.WriteLine(ret10); // Retorna True
+Console.WriteLine(ret11); // Retorna False
+
+//----------------------------------------------------------------------------
+// Strings -------------------------------------------------------------------
+//----------------------------------------------------------------------------
+
+string frase = "O dia está lindo!";
+
+Console.WriteLine(frase);
+
+frase.Replace("lindo", "chuvoso");
+
+Console.WriteLine(frase);
+
+frase = frase.Trim();
+frase = frase.TrimEnd();
+frase = frase.TrimStart();
+
+frase = frase.Trim('!');
+
+Console.WriteLine(frase);
+
+string cpf = "540045034";
+string cpf1 = cpf.PadLeft(11, '0');
+//string cpf1 = cpf.PadRight(11, '0');
+
+Console.WriteLine(cpf1);
+
+string frase2 = $"Meu CPF é {cpf1}";
+
+Console.WriteLine(frase2);

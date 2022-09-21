@@ -1,0 +1,143 @@
+// See https://aka.ms/new-console-template for more information
+// Repetições
+
+// ----------------------------------------------------------------
+// IF / ELSE ------------------------------------------------------
+// ----------------------------------------------------------------
+
+/*
+if (condição a ser testada)
+{
+    comando a ser executado caso for verdadeira
+}
+*/
+
+// USO ----------------------
+
+/*
+const string APROVADO = "Aprovado!";
+const string REPROVADO = "Reprovado!";
+const string EM_RECUPERACAO = "Em Recuperação!";
+Console.WriteLine("Digite a nota: ");
+decimal nota = Convert.ToDecimal(Console.ReadLine());
+
+if (nota >= 5)
+{
+    Console.WriteLine(APROVADO);
+}
+else if (nota >= 4 && nota < 5)
+{
+    Console.WriteLine(EM_RECUPERACAO);
+}
+else
+{
+    Console.WriteLine(REPROVADO);
+}
+*/
+
+// ----------------------------------------------------------------
+// SWITCH ---------------------------------------------------------
+// ----------------------------------------------------------------
+
+/*
+    switch (variavel)
+    {
+        case valor1:
+            comando a ser executado;
+            break;
+        
+        case valor2:
+            comando a ser executado;
+            break;
+        
+        default:
+            comando a ser executado;
+            break;
+    }
+*/
+
+// USO ----------------------
+
+/*
+const string DIAS_31 = "Este mês tem 31 dias!";
+const string DIAS_30 = "Este mês tem 30 dias!";
+const string DIAS_28 = "Este mês tem 28 dias!";
+const string MES_INVALIDO = "Este mês não existe!";
+Console.WriteLine("Escreva um mês: ");
+string mes = Console.ReadLine();
+
+switch (mes.ToUpper())
+{
+    case "JANEIRO":
+    case "MARÇO":
+    case "MAIO":
+    case "JULHO":
+    case "AGOSTO":
+    case "OUTUBRO":
+    case "DEZEMBRO":
+        Console.WriteLine(DIAS_31);
+        break;
+
+    case "FEVEREIRO":
+        Console.WriteLine(DIAS_28);
+        break;
+
+    case "ABRIL":
+    case "JUNHO":
+    case "SETEMBRO":
+    case "NOVEMBRO":
+        Console.WriteLine(DIAS_30);
+        break;
+
+    default:
+        Console.WriteLine(MES_INVALIDO);
+        break;
+}
+*/
+
+// ----------------------------------------------------------------
+// WHILE / FOR ----------------------------------------------------
+// ----------------------------------------------------------------
+
+/*
+int[] arInt = new int[] { 1, 2, 6, 4, 5 };
+int i = 0;
+
+// while (i <= 10)
+// {
+//     Console.WriteLine(i);
+//     i++;
+// }
+
+while (i < arInt.Length)
+{
+    int numero = arInt[i];
+    Console.WriteLine(numero);
+    i++;
+}
+*/
+
+// for(int j = 0; j <= 10; j++)
+// {
+//     Console.WriteLine(j);
+// }
+
+/*
+int[] arInt = new int[] { 1, 2, 6, 4, 5 };
+
+for(int j = 0; j < arInt.Length; j++)
+{
+    int numero = arInt[j];
+    Console.WriteLine(numero);
+}
+*/
+
+// ----------------------------------------------------------------
+// FOREACH --------------------------------------------------------
+// ----------------------------------------------------------------
+
+int[] arInt = new int[] { 1, 2, 3, 4, 5 };
+foreach (int numero in arInt)
+{
+    Console.WriteLine(numero);
+}
